@@ -1,0 +1,5 @@
+type = "line-corpus"
+metadata = [{name = "url", type = "string"},
+            {name = "date", type = "string"},
+            {name = "upvotes", type = "uint"}]
+store-full-text = true

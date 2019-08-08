@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>410 Project</title>
+       <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+		</div>
+	</nav>
+
+
+	<!-- Search Form -->
+  <form action ="/search" method = "POST" >
+  	<h1 class = "display-1 text-center"><font size = "16"> Search</font></h1>
+  	<div class="row justify-content-center">
+  		<div class="form-group display-4">
+				<input type="text" input name = "query" class="form-control mb-2 mr=2 mr-sm-2 mb-sm-0 text-center" id="formGroupExampleInput" placeholder = "">
+        </div class="row justify-content-center"> 
+            <p class="ml-2">
+                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Options
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="row">
+                    <label class="col-auto ml-3 text-nowrap">Start Date</label>
+                    <input class="col form-control" type="date" name="startDate">
+                    <label class="col-auto">End Date</label>
+                    <input class="col form-control" type="date" name="endDate">
+                    <div class="col form-check ml-3">
+                        <input class="row form-check-input" type="radio" name="sortingType" id="exampleRadios1" value="date" checked>
+                        <label class="form-check-label text-nowrap" for="exampleRadios1">
+                            Order By Date
+                        </label>
+                        <input class="row form-check-input" type="radio" name="sortingType" id="exampleRadios1" value="upvotes">
+                        <label class="form-check-label text-nowrap" for="exampleRadios1">
+                            Order By Upvotes
+                        </label>
+                    </div>
+                </div>
+			</div>
+        </div>
+        <!-- <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Default radio
+            </label>
+        </div> -->
+  	    <div class="row justify-content-center">
+			<button type="submit" class="btn btn-primary text-center mt-4">Submit</button>
+
+		</div>
+	</form>
+
+
+
+
+
+ <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

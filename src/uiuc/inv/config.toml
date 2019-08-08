@@ -1,0 +1,26 @@
+query-judgements = "evaluation/uiuc_evals.txt"
+stop-words = "stopwords.txt"
+prefix = "."
+dataset = "r_uiuc"
+corpus = "line.toml"
+index = "uiuc"
+indexer-ram-budget = 1024
+[[analyzers]]
+	method = "ngram-word"
+	ngram = 1
+	[[analyzers.filter]]
+		type = "icu-tokenizer"
+	[[analyzers.filter]]
+		type = "lowercase"
+	[[analyzers.filter]]
+		max = 35
+		type = "length"
+		min = 2
+	[[analyzers.filter]]
+		file = "stopwords.txt"
+		type = "list"
+		method = "reject"
+	[[analyzers.filter]]
+		type = "porter2-filter"
+	[[analyzers.filter]]
+		type = "empty-sentence"
