@@ -39,10 +39,3 @@ For Linux
 6. Now run search_server.py
 7. The default web address is 127.0.0.1:5000
 8. Specify the date interval, sort interval, and make your query
-
-**Team Contributions**  
-John Diffor (jdiffor2) - Built the scraper  
-Vivek Bandapalle (vbanda4) - Built search_server.py and did initial designs on the webpages  
-Michael Yang (xusheng2) - Improved the two webpages, allowing the user to specify date intervals and sorting type and redesigned how results are displayed  
-Diya Kalaimani (dk2) - Built training.py, made the progress report video and final presentation video  
-Chen Lin (chenlin3) - Built search_engine.py and evaluation.py
